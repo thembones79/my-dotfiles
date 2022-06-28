@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+### n 10
+tmux new -s "🚀 UnisystemRFQ BackEnd" -d
+tmux send-keys "cd ~/Projects/work/unisystem-rfq/unisystem-rfq--back" C-m
+tmux send-keys "npm run dev" C-m
+tmux rename-window "🔮 Terminal"
+tmux new-window -c ~/Projects/work/unisystem-rfq/unisystem-rfq--back
+tmux rename-window "💪 Code"
+tmux send-keys "code ." C-m
+
+
+tmux new -s "✨ UnisystemRFQ FrontEnd" -d
+tmux send-keys "cd ~/Projects/work/unisystem-rfq/unisystem-rfq--front" C-m
+tmux send-keys "yarn dev" C-m
+tmux rename-window "🔮 Terminal"
+tmux new-window -c ~/Projects/work/unisystem-rfq/unisystem-rfq--front
+tmux rename-window "💪 Code"
+tmux send-keys "code ." C-m
+
+
+tmux a -t "🚀 UnisystemRFQ BackEnd"

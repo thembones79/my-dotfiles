@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+### create symbolic link to this /usr/bin/g
+
+
+~/Projects/sandbox/starters/$1
